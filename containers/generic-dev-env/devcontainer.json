@@ -1,0 +1,14 @@
+{
+    "name": "Arquiteto Dev Container",
+    "image": "mcr.microsoft.com/devcontainers/dotnet:8.0",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-dotnettools.csdevkit",
+                "ms-azuretools.vscode-docker",
+                "christian-kohler.path-intellisense"
+            ]
+        }
+    },
+    "remoteUser": "vscode"
+}

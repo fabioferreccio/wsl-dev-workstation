@@ -1,0 +1,10 @@
+# Caminho sugerido no Linux: ~/.ssh/config
+Host bastion
+    HostName IP_DO_SERVIDOR_BASTION
+    User seu_usuario_infra
+    IdentityFile ~/.ssh/id_rsa_trabalho
+
+Host servidor-interno
+    HostName 10.0.0.50
+    ProxyJump bastion
+    User dev
