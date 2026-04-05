@@ -55,6 +55,13 @@ $xml += "<SandboxFolder>C:\Users\WDAGUtilityAccount\Desktop\Tools</SandboxFolder
 $xml += "<ReadOnly>false</ReadOnly>"
 $xml += "</MappedFolder>"
 
+# Scripts de automacao (somente leitura)
+$xml += "<MappedFolder>"
+$xml += "<HostFolder>$workerPath\scripts</HostFolder>"
+$xml += "<SandboxFolder>C:\Users\WDAGUtilityAccount\Desktop\Scripts</SandboxFolder>"
+$xml += "<ReadOnly>true</ReadOnly>"
+$xml += "</MappedFolder>"
+
 # Projetos legados (leitura/escrita — persistente no host)
 $xml += "<MappedFolder>"
 $xml += "<HostFolder>$projectsPath</HostFolder>"
